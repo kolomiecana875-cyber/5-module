@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --clr-orange: hsl(31, 77%, 52%);
+  --clr-dark-cyan: hsl(184, 100%, 22%);
+  --clr-very-dark-cyan: hsl(179, 100%, 13%);
+  --clr-white-transparent: hsla(0, 0%, 100%, 0.75);
+  --clr-very-light-gray: hsl(0, 0%, 95%);
+
+  --ff-main: "Lexend Deca", sans-serif;
+  --ff-secondary: "Big Shoulders", sans-serif;
+}
+
+p {
+  color: var(--clr-white-transparent);
+}
+
+h1,
+h2,
+h3,
+button {
+  color: var(--clr-very-light-gray);
+}
+
+body {
+  background-color: var(--clr-very-light-gray);
+  font-family: var(--ff-main);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.card-title {
+  font-family: var(--ff-secondary);
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--clr-very-light-gray);
+  margin-bottom: 24px;
+}
+.card-text {
+  color: var(--clr-white-transparent);
+  line-height: 1.65;
+  margin-bottom: 64px;
+}
+.card-button {
+  margin-top: auto;
+  padding: 12px 28px;
+  border: 2px solid #ffffff;
+  border-radius: 999px;
+  background-color: transparent;
+  color: #ffffff;
+  font-family: var(--ff-main);
+  font-size: 15px;
+  cursor: pointer;
+}
+.cards {
+  display: flex;
+  max-width: 800px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 32px;
+  flex: 1;
+  align-items: flex-start;
+  padding: 48px;
+}
+.card-image {
+  width: 64px;
+  height: auto;
+  margin-bottom: 32px;
+  align-self: flex-start;
+}
+.card-orange {
+  background-color: var(--clr-orange);
+}
+
+.card-blue {
+  background-color: var(--clr-dark-cyan);
+}
+
+.card-green {
+  background-color: var(--clr-very-dark-cyan);
+}
